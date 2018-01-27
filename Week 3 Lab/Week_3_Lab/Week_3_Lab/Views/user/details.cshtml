@@ -1,0 +1,18 @@
+﻿@model Week_3_Lab.Data.Entities.users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.firstName) @Html.DisplayFor(model => model.lastName)</h4>
+    <hr />
+    <b>@Html.DisplayNameFor(model => model.description):</b>
+    <p>@Html.DisplayFor(model => model.description)</p>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "UserList")
+</p>
