@@ -1,0 +1,18 @@
+Exercise 1:
+5d. DateTime.Now.Year does.
+e. The year gets generated in the browser.
+
+Exercise 2:
+
+6a. "@Html" tags are Html helper extensions
+b. It is defined at the top of the view code using the "@model" tag.
+
+8. It is the same because the page is using the same template page as the Home page.  The "_Layout" page.
+
+9. It throws an error because that page has not been created yet.  It can't find the controller.
+
+Exercise 4:
+
+1. Only the years in school is displayed.
+
+2. It doesn't post.  It returns the page with errors saying that those fields are required.
