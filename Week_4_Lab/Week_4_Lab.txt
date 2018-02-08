@@ -1,0 +1,10 @@
+Exercise 1
+
+4. [Key] tells EntityFramework that the property is a key in the table.
+7. They are used for connecting to the database.
+14. Because it dropped the database (with all its data) and created a new one.
+
+Exercise 2
+
+1. Because the ViewModel contains logic that is specific
+for how the field is displayed in the view.
