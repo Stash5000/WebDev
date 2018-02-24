@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Styles/app.css" />
+    <meta charset="utf-8" />
+    <title>REGISTRATION</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Help.html">Help</a>
+    </nav>
+    <form>
+        <p class="formSTL">FIRST NAME: <input type="text" id="fName" maxlength="10" /></p>
+        <p class="formSTL">LAST NAME: <input type="text" id="lName" maxlength="15" /></p>
+        <p class="formSTL">AGE: <input type="number" id="age" /></p>
+        <p class="formSTL">YEAR: </p>
+            <div>
+                <input type="radio" id="year" value="freshman" checked />Freshman<br />
+                <input type="radio" id="year" value="sophmore" />Sophmore<br />
+                <input type="radio" id="year" value="junior" />Junior<br />
+                <input type="radio" id="year" value="Senior" />Senior<br />
+            </div>
+            <input type="button" value="Register" onclick="sum()"  />
+    </form>
+    <label id="summary" class="mySections"></label>
+    <hr />
+    <footer><p>You are now better informed about life.</p><p>&copy; 2018</p></footer>
+
+    <script type="text/javascript" src="Scrypts/app.js"></script>
+</body>
+</html>

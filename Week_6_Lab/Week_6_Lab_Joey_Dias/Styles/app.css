@@ -1,0 +1,56 @@
+﻿body {
+    font-family: fantasy;
+    font-size: larger;
+    background-color: blue;
+    color: white;
+}
+
+header {
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding-top: 50px;
+
+}
+
+a {
+    color: yellow;
+    background-color: darkblue;
+}
+
+table, th, td {
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+nav {
+    background-color: aqua;
+    color: cornsilk;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.mySections {
+    color: cyan;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+.formSTL {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: lightgreen;
+    font-family: 'Arial Rounded MT';
+    font-size: larger;
+    font-weight: bolder;
+}
+
+form {
+    padding-left: 100px;
+}
+
+input {
+    display: inline-block;
+}
