@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Week_7_Lab.Data.Entities.users>
+
+@{
+    ViewBag.Title = "List of Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="well">
+    <h1>MY USERS</h1>
+</div>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { @class = "btn-lg" })
+</p>
+@if (Model.Count() > 2)
+{
+    <div class="alert-warning alert-dismissable">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>WHOOPS!!</strong>: More than 2 users in the database!
+    </div>
+}
+<table class="table-striped" border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.firstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.middleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yIS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.firstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.middleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yIS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }, new { @class = "btn-xs" }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }, new { @class = "btn-xs" }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn-xs" })
+        </td>
+    </tr>
+}
+
+</table>
+
+<div class="btn-block">
+    <button id="showBTN" class="btn-primary" type="submit">Show</button>
+    <button id="hideBTN" class="btn-primary" type="submit">Hide</button>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(toRun)
+        function toRun() {
+            /*alert("Hello")*/
+            $("#showBTN").click(function () {
+                $("table").show();
+            });
+
+            $("#hideBTN").click(function () {
+                $("table").hide();
+            });
+        }
+    </script>
+}
