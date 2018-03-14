@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week_4_Lab_Joey_Dias", "Week_4_Lab_Joey_Dias\Week_4_Lab_Joey_Dias.csproj", "{961BA8CE-4C6B-44BB-BF90-779A165CFE66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAPI", "MyAPI\MyAPI.csproj", "{F5194070-D50A-49AA-945E-3B29C9A02A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{961BA8CE-4C6B-44BB-BF90-779A165CFE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961BA8CE-4C6B-44BB-BF90-779A165CFE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961BA8CE-4C6B-44BB-BF90-779A165CFE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961BA8CE-4C6B-44BB-BF90-779A165CFE66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5194070-D50A-49AA-945E-3B29C9A02A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5194070-D50A-49AA-945E-3B29C9A02A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5194070-D50A-49AA-945E-3B29C9A02A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5194070-D50A-49AA-945E-3B29C9A02A91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92A526C7-6399-4FE7-ADEB-8567097EB546}
+	EndGlobalSection
+EndGlobal
